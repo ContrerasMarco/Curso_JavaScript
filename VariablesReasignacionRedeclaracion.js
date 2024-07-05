@@ -6,6 +6,8 @@ console.log(firstname); //accedemos a la variable.
 var lastname = "contreras"; //asignamos y declaramos en una linea la variable
 lastname = "aranda"; //reasinagmos la variable
 console.log(lastname); // accedimos a ella
+var lastname = "marco"; // re declaramos la variables
+console.log(lastname);
 
 //declarar, reasignar y redeclarar con LET
 
