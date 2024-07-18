@@ -46,13 +46,15 @@ const usuario = {
   apellido: "alaves",
   edad: "40",
 };
-/*function saludarUsuario(usuario) {
-  return (`Hola como esta ${usuario.nombre}`);
+////////////////////////////////////////////////////////////////// Funcion que le pasamos un objeto como parametro.
+function saludarUsuario(usuario) {
+  return `Hola como esta ${usuario.nombre}`;
 }
-console.log(saludarUsuario(usuario));*/
+console.log(saludarUsuario(usuario));
 //////////////////////////////////////////////////////////////////
 
 function DatosUsuario(usuario) {
+  // anidacion de funciones y pasandole un objeto como parametro.
   function NameUsuario() {
     return `Hola usuario ${usuario.nombre}`;
   }
@@ -79,3 +81,4 @@ const cohete = {
   },
 };
 cohete.MensajeLanzamiento();
+console.log(cohete.nombre);
