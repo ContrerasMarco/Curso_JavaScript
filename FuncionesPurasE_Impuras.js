@@ -23,7 +23,7 @@ function suma(num, num2) {
 console.log(suma(2, 2));
 
 let total = 0;
-
+//esta es una funcion impura ya que modificamos una variable de scope global
 function contador(a) {
   total += a;
   return total;
