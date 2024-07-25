@@ -11,8 +11,8 @@ if (num === 4) {
 }
 */
 const prompt = require("prompt-sync")();
-const num = prompt("Ingrese un numero :");
-const num2 = prompt("Ingrese otro numero :");
+const num = prompt("Ingrese un numero ");
+const num2 = prompt("Ingrese otro numero ");
 if (num > num2) {
   console.log(`El numero ${num} es mayor`);
 } else if (num === num2) {
