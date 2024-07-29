@@ -24,7 +24,9 @@ for (tecnologicos in dispositivos) {
   console.log(tecnologicos);
 }
 
-//Para acceder al valor de la propiedad hacemos esto.
+/*Para acceder al valor de la propiedad hacemos esto. iteramos con un for in
+luego para imprimir utilizamos el template literal para acceder primero a la propiedad
+para despues acceder al valor de la propiedad*/
 
 for (tecnologicos in dispositivos) {
   console.log(`${tecnologicos} : ${dispositivos[tecnologicos]}`);
