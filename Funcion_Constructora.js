@@ -40,3 +40,11 @@ console.log(jugador1); //verifico que la porpiedad edad agregada con el metodo p
 console.log(jugador2);
 console.log(jugador3);
 console.log(jugador4);
+console.log("------------------------");
+Jugadoruch.prototype.ficha = function () {
+  // se crea una funcion anonimapara msotrar con template literal un tipo de presentacion donde accedemos a su nombre y su posicion.
+  console.log(
+    `Hola soy ${this.nombre} y mi posicion favorita es ${this.posicion}`
+  );
+};
+jugador1.ficha(); //se imprime por pantalla la funcion.
