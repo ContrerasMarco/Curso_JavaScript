@@ -66,9 +66,39 @@ class FichaEquipo extends EquipoFutbol {
       `Felicitacion a ${this.nombre} en su aniversario de fundacion en el año ${this.añoFundacion}`
     );
   }
+  AñosFundacionYcolorEquipamiento() {
+    for (let i = 0; i < todoslosequipos.length; i++) {
+      const equipos = todoslosequipos[i];
+      if (equipos.añoFundacion === 1927 && equipos.colorEquipacion === "azul") {
+        console.log(
+          `los equipos que coinciden con el ano de fundacion y color de equipamiento son ${equipos.nombre}`
+        );
+      }
+    }
+  }
 }
+const todoslosequipos = [];
+const Udechile = new FichaEquipo("UdeChile", 1927, "Azul", "2018");
+todoslosequipos.push(Udechile);
+const Colocolo = new FichaEquipo("Coco-Colo", 1917, "blanco", "2022");
+todoslosequipos.push(Colocolo);
+const Ucatolica = new FichaEquipo("Ucatolica", 1927, "azul", "2021");
+todoslosequipos.push(Ucatolica);
+const Uespañola = new FichaEquipo("Uespañola", 1897, "rojo", "2005");
+todoslosequipos.push(Uespañola);
+const Palestino = new FichaEquipo(
+  "Palestino",
+  "1920",
+  "blanco rojo verde",
+  "1978"
+);
+todoslosequipos.push(Palestino);
 
-const Udechile = new FichaEquipo("UdeChile", "1927", "Azul", "2018");
 console.log(Udechile);
+console.log(Colocolo);
+console.log(Ucatolica);
+console.log(Uespañola);
+console.log(Palestino);
+todoslosequipos.AñosFundacionYcolorEquipamiento();
 Udechile.Felicitaciones();
 Udechile.fechafundacion();
