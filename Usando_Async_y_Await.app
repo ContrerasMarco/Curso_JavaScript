@@ -10,7 +10,7 @@ pasando,*/
     .then((response) => response.json())
     .then((data) => console.log(data))
     .catch((error) => console.log(error));
-}*/
+}
 
 async function fechData() {
   //con async trasnformamos una funcion en una promesa para que pueda trabajar de forma asincrona
@@ -23,4 +23,21 @@ async function fechData() {
     //con el catch nos referimos cuando la promesa no se cumple.
     console.log(error);
   }
+}*/
+
+const ConsultaUrlApi = [
+  "https://rickandmortyapi.com/api/character",
+  "https://rickandmortyapi.com/api/location",
+  "https://rickandmortyapi.com/api/episode",
+];
+
+async function fechUrlConsulta() {
+  try {
+    for await (let url of ConsultaUrlApi) {
+      let response = await fetch(url);
+      let data = await response.json();
+      console.log(data);
+    }
+  } catch (error) {}
+  console.log(error);
 }
