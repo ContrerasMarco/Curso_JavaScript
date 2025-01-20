@@ -28,3 +28,4 @@ PATCH: Se utiliza para actualizar un recurso existente de forma parcial, como al
 correo electrónico de un usuario.
 
 DELETE: Se utiliza para eliminar un recurso del servidor, como al eliminar un archivo o una publicación de un foro.*/
+
